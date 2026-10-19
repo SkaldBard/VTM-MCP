@@ -18,6 +18,14 @@
 
 **Classic Dark Ages line** (original, pre-V20, published ~1996-2002):
 - `clanbook-salubri/` — Clanbook: Salubri, 74 pages
+- `clanbook-baali/` — Clanbook: Baali (1998; the infernalist bloodline's own
+  history from the first tribe's well at Ashur through Carthage, Rome, the
+  Assamite war and Azaneal's rise at Chorazin, plus orders, the D'habi
+  revenants, Roads, Merits/Flaws, Daimoinon powers, seven templates, and a
+  gallery of infamous Baali; narrated by deliberately plural, partisan
+  in-character voices). The source PDF was an image-only scan, so this
+  bundle's chunk database is OCR text — see its README for the caveats and
+  the printed-page-vs-DB-page offset, 70 pages
 - `wind-from-the-east/` — Wind from the East (Dark Ages/Mongol-era supplement, also relevant to Kindred of the East — see its own README), 98 pages
 - `dark-ages-inquisitor/` — Dark Ages: Inquisitor (a *hunters'*-side sourcebook — the shadow Inquisition that fights Cainites — for the original, pre-V20 *Dark Ages: Vampire*, which it explicitly requires to play), 245 pages. Bundle also includes `dark-ages-inquisitor-v20-conversion.md`, a fan analysis/house-rule package for running this book at a V20 table — see "A note on editions and game lines" below and that bundle's own README.
 - `dark-ages-inquisitor-companion/` — Dark Ages: Inquisitor Companion (2004; a direct companion to the above, same classic-line rules and setting — order-by-order recruitment/politics/chapter-houses, the Marzonian Rule governing mixed cells, a large new Blessings/Curses/Merits & Flaws catalog, rules for non-order inquisitor characters, and six new antagonists, two of which tie directly into the base book's own open plot threads), 143 pages.
@@ -57,7 +65,7 @@
   Infernalism), 172 pages
 
 ## How to use this file
-This file synthesizes themes across all 28 books above. For details on
+This file synthesizes themes across all 29 books above. For details on
 any single book, read that book's own `book_index.md` in its
 subdirectory. For exact quotes/facts, query that book's `book_chunks.db`,
 or use `scripts/query_library.py` to search across several databases at
@@ -135,9 +143,13 @@ canons that happen to share cosmology, not as strictly compatible facts.
    explicitly contradicts something here (V20 simply not mentioning a
    detail, e.g. the current regent's identity, is a gap, not a
    contradiction).
-3. **The classic Dark Ages line** (`clanbook-salubri`,
+3. **The classic Dark Ages line** (`clanbook-salubri`, `clanbook-baali`,
    `wind-from-the-east`, `dark-ages-inquisitor`) is the *original*,
    pre-V20 Dark Ages product line, also from the late 1990s/early 2000s.
+   (`clanbook-baali` points readers to a classic-line *Dark Ages
+   Companion* and *Libellus Sanguinis I: Masters of the State* — neither
+   is in this library, and that *Dark Ages Companion* is not
+   `v20-dark-ages-companion`.)
    `v20-dark-ages` is explicitly a later, updated edition of this same
    period-setting line — but it is not a direct reprint. Where
    `clanbook-salubri` or `wind-from-the-east` and `v20-dark-ages`
@@ -398,6 +410,15 @@ Reading clanbook-salubri and clanbook-tremere-revised back to back is
 the single clearest demonstration in this library of how differently
 two clanbooks can frame the identical historical act depending on whose
 voice is narrating.
+
+**clanbook-baali** adds a fourth, hostile voice from outside both camps:
+its in-character narrator dismisses "Gentle Saulot" as "Philosopher.
+Pilgrim. Pacifist. Passionate. Pathetic," and its origin chapter lists "gentle
+Saulot himself" only as one whispered identity for the unnamed *third* of the
+three first Baali (and as one candidate sire in the "Ashur the Unnamed" sidebar)
+— a different implication from `clanbook-salubri`'s tablet, which makes Saulot
+the stranger who gave the survivors their vitae. See "The Baali across the
+library" below.
 
 ### The Week of Nightmares: a Ravnos catastrophe felt clan-wide
 Three classic Revised-line clanbooks reference the same present-day
@@ -846,6 +867,10 @@ add further, unreconciled data points rather than resolving the question:
   metaphysical discipline (Dur-An-Ki, the "Ladder of Heaven") specifically
   to break it, with centuries of effort and no success yet, and with a
   Warrior caste growing impatient at the Sorcerers' lack of results.
+A separate, earlier **Baali Curse** on the Assamite warriors is also in play,
+and `v20-lore-clans` says the Tremere Curse neutralizes it — see "The Baali
+across the library" below for the three accounts of that curse
+(`clanbook-baali`, `clanbook-assamite-revised`, `v20-lore-clans`).
 Whether the Revised-era "already broken" position (supported by two
 independent 2000-2002 books) was later reversed, retconned, or simply
 quietly dropped by the time of `v20-rites-of-the-blood` (2014) is not
@@ -877,6 +902,146 @@ unresolved across the V20 and classic-line books — gains further entries:
   destruction.
 
 
+### The Baali across the library: a shared skeleton, a contested origin, and several details that don't line up
+`clanbook-baali` (classic Dark Ages, 1998) is this library's fullest
+account of the Baali's own history and organization — it is the only book
+that narrates them at length from the inside — and it overlaps with scattered
+Baali material in `v20-lore-bloodlines` (a full Baali chapter), `v20-dark-ages`,
+`v20-core`, `v20-lore-clans`, `clanbook-salubri`, `clanbook-assamite-revised`
+and several others. Mostly it adds detail, but a few points genuinely diverge.
+Its own narrators are deliberately partisan ("no one voice speaks the entire
+truth"), so every item below is one book's *claim*, not a settled fact; and
+`clanbook-baali` is a scan, so check the PDF before relying on a verbatim quote.
+- **Origin — a well, three survivors, an unnamed benefactor.** Every source
+  that tells it uses the same skeleton (survivors of a destroyed sacrificial
+  cult revived by a Cainite's blood), but the details split. `clanbook-baali`
+  (Ch. Two): the first tribe's sacrificial well at Ashur; a Cainite "of great
+  power and majesty" destroys the cult and lets his vitae flow into the well;
+  three mortals survive — Nergal, Moloch, and a third whose name and even sex
+  are unknown — and the benefactor is never named. It lists "gentle Saulot
+  himself" only as one rumored *identity of the third Baali* and as one of
+  several candidate sires in its "Ashur the Unnamed" sidebar (alongside Ashur-
+  called-Cappadocius and an unnamed eastern ancient). `clanbook-salubri`
+  (Appendix Two) goes further: a disputed Sumerian tablet names Saulot as the
+  *stranger who gave the three survivors their vitae* — i.e. as the Baali's
+  sire. So the two classic Dark Ages books both implicate Saulot but in
+  different roles, and neither endorses it. `v20-dark-ages` (Appendix B) says
+  the three survivors "took a demon's name," with Tzimisce, Saulot and other
+  theories "circulated and denied." `v20-lore-bloodlines` (Ch. Baali) uses a
+  different cosmology altogether — brothers Nergal and Moloch devour buried
+  "First People," God's discarded pre-human creations, with no well — whereas
+  `clanbook-baali`'s Sleepers are fallen "Children of Night." Read together
+  they are one unresolved plural history, in the model of this library's
+  Carthage disagreement.
+- **Nergal's fate, and whether Namtaru survives.** Common ground first: both
+  `clanbook-baali` and `v20-lore-bloodlines` have **Moloch betray his power-drunk
+  brother Nergal to the other Clans** over a demon-fueled plan. From there they
+  part. `clanbook-baali`: the clans
+  (with Lasombra priests of Ereshkigal) raze Mashkan-shapir, but Nergal's
+  "destruction" was a ruse; he returns as **Shaitan**, builds Chorazin over
+  Namtaru's tomb, and reportedly dies when Thera erupts over Knossos;
+  Namtaru survives, buried and "no longer trapped in dreams," and by the
+  book's present is stirring again. `v20-lore-bloodlines` (Ch. Baali):
+  "In the end, Nergal was slain. Sadly, so was Namtaru, the creature's head
+  severed while attempting to break through" — the demon is dead and its
+  soul-fragment is only ritually invoked (for the Re-Embrace). `v20-dark-ages`
+  (Appendix B, Salubri Warrior sidebar) has Nergal tearing out Samiel's heart
+  at Chorazin, which fits `clanbook-baali`'s Chorazin-as-Shaitan's-palace but
+  not a Nergal who died at Mashkan-shapir. Not reconcilable as one account.
+- **Azaneal and the Angellis Ater.** `clanbook-baali`: Azaneal (11th c.) finds
+  texts saying Chorazin's gate hides in "living shadows," seeks out Lasombra
+  infernalists, and **allies with an already-existing angellis ater coven** in
+  Valencia; the coven opens the gate; Azaneal alone survives, changed, and
+  his childer are sterile; for Azaneali Baali, Obtenebration may replace either
+  Daimoinon or Presence. `v20-core` and `v20-lore-bloodlines` instead describe the
+  Angellis Ater as a Baali/Lasombra hybrid bloodline descended from Azaneal's
+  *corruption* of Catholic-infiltrating Lasombra, and `v20-dark-ages` (Appendix
+  B) has them "created" by a Baali "Rite of Apostasy." Alliance vs. creation.
+- **Re-Embrace.** `v20-lore-bloodlines` gives a "Re-Embrace" that overrides an
+  other-clan vampire's blood by invoking a fragment of Namtaru's soul;
+  `clanbook-baali` ("Embracing the Dead," Ch. Three; the Apostate Merit)
+  describes other-clan converts drained completely by a nest-master and then
+  allowed to drain him back — no Namtaru invocation — and gives converts the
+  option to keep an ancestral-clan Discipline in place of Obfuscate or Presence.
+- **The Baali Curse on the Assamites — an earlier curse than the Tremere one,
+  with two competing settings.** Three books have the Baali cursing the Assamite
+  warriors with a craving for vampire blood. `clanbook-baali`: after Mecca falls
+  and the unified Assamites sweep the Baali out of Arabia and the Fertile
+  Crescent, six nests hold a months-long ritual at the **Iblii-al-Akbar organ pit
+  in Damascus** — two captured Assamites, 200+ flayed mortals, the blood offered
+  to the Decani — which "curse[s] the Alamut Assamites," turning ritual Amaranth
+  into an insatiable desire to consume. In that book Chorazin during this era is
+  a hidden, "skeletal" ruin that younger orders are still hunting for. By
+  contrast `clanbook-assamite-revised` (Ch. One) and `v20-lore-clans`
+  (The Assamites) both set the curse **at Chorazin itself**, a living "hell-city"
+  besieged by Assamite warriors and sorcerers: in `clanbook-assamite-revised`
+  the Baali use captured warriors as a focus ("As you thirst for our blood, so
+  shall you hunger for all blood for all time") and by the 14th century the whole
+  warrior caste is afflicted; `v20-lore-clans` dates it to **636 CE**, says warriors
+  were "the first and most heavily affected," and adds that the later **Tremere
+  Curse** "effectively neutralized the much more debilitating Baali Curse" —
+  Assamites "suffer from the Tremere Curse and the Baali Curse, though the former
+  negates the latter," so lifting the Tremere Curse "would immediately" subject
+  all warriors to the Baali one. (That V20 framing is relevant to "The Assamite
+  blood curse" section above: in it, the Baali Curse is what would remain if the
+  Tremere Curse broke.) `clanbook-baali` itself never mentions the Tremere curse.
+  Agreement: the Baali cursed Assamite warriors with vitae-thirst; disagreement:
+  the place (Damascus pit vs. Chorazin), the mechanism, and Chorazin's state.
+- **Carthage, a ninth telling — the Baali's own.** `clanbook-baali`: Moloch rises
+  at Carthage as Ba'al Hammon; the Baali advise the Brujah (ghouling Hannibal's
+  elephants, normalizing diablerie); Moloch and the Brujah Antediluvian
+  **Troile** become Blood-Oathbound lovers; at the city's fall to Rome both
+  vanish into the ground, and Roman Ventrue and Lasombra seal them — in the
+  Appendix by **Cybele's** rituals, "where they still sleep to this day." The
+  other books already tracked here also tie Baali influence to Carthage's end
+  (`clanbook-brujah-revised`'s "Baalist rites," `v20-rites-of-the-blood`'s
+  Malkavian seer Tryphosa and her anti-infernal coterie, `v20-dark-ages`'s
+  Malkavian seer credited with inciting the destruction) but none agrees on
+  motive, mechanism, or Troile's fate. A possible name link, not an asserted
+  one: `v20-dark-ages` (Ch. Three, Roads) names a Baali, **Tanitbaal-Sahur**
+  (spelled "-Sahar" once), who had "the tenets of the Road [of the Hive]… whipped
+  and smashed into his soul in Carthage," failed to follow it, and went to Rome,
+  where he codified the original Road later deemed Sinful (ancestor of the Path
+  of the Devil, Virtues Conviction and Instinct); `clanbook-baali` names Moloch's
+  "most trusted childe" **Tanit** at Carthage. Neither book cross-references the
+  other. (`clanbook-baali`'s own "Via Diabolis"/Road of the Devil is its sample
+  characters' Road; their printed Road dots don't consistently equal Conviction +
+  Instinct — see its `book_index.md`.)
+- **The Road of the Hive (Via Hyron).** `v20-dark-ages` names it in passing as
+  "the Road of the Hive"; `clanbook-baali` (Ch. Three) is the library's fuller
+  source — original Baali Road, "my tribe and I against our enemies," plus its
+  ten-rung Hierarchy of Sin table. Mechanics are classic-line Dark Ages rules,
+  not V20; its Daimoinon powers (Glimpse the Gulf Beyond, six dots; Open the Way,
+  ten dots; I Am Legion) have no counterpart text in this library and are
+  separate from any V20 Daimoinon write-up (`v20-lore-bloodlines`' "Alternate
+  Daimoinon," `v20-dark-ages`, `v20-tome-of-secrets`) — don't merge them.
+- **Two possible links to other books, neither cross-referenced.** (1) The
+  Roman-era elder **Cybele** in `clanbook-baali` (a bloodthirsty temple cult with
+  self-castrating *galli* priests) shares a name — and a blood-drinking-cult
+  flavor — with the Cybele in `clanbook-malkavian-revised`'s Ch. One ("she who
+  wore the earth as a blanket and drank up the blood of her faithful"); neither
+  book says they are the same figure. (2) `guide-to-the-sabbat-revised`'s
+  infernalist "Corrupters" serve masters including the **Decani**, "lords of
+  disease" — the same name `clanbook-baali` gives to Namtaru's 36 disease spirits
+  — a plausible shared demonology across the classic lines, again without an
+  explicit cross-reference.
+- **Unique here.** Searching every other bundle's chunk database (at the time
+  this book was added) finds none of: the Avatars of the Swarm, the Dark
+  Magister, Hay-Tau, Anoster, Anaduk the Black, Ma-ri-ah, the Iblii-al-Akbar
+  pit, or Mashkan-shapir (apart from a name in a V20 backer list); "Brood
+  Mother" appears once elsewhere, in `clanbook-giovanni-revised`, in an
+  unrelated sense. Treat these as this book's material, not library-wide canon.
+
+## Points of agreement
+
+- **The Baali's shape is broadly stable even where details clash.** Across
+  `clanbook-baali`, `v20-lore-bloodlines`, `v20-dark-ages`, `v20-core` and
+  `v20-lore-clans`, the Baali are an infernalist bloodline built around
+  demon-summoning and true names, descended from a founding trio/pair
+  (Nergal and Moloch), served by the D'habi revenant family, opposed by the
+  Assamites and Salubri Warriors, entangled with Carthage, and tied to the
+  Lasombra's Angellis Ater via Azaneal. The disagreements above are about
+  origin, fates and mechanisms, not about what the Baali *are*.
 - **Core cosmology is stable across all four books**: Caine's curse,
   the Second/Third Generation Antediluvian structure, Gehenna as
   looming and unconfirmed, Golconda as a rumored and possibly
@@ -1026,7 +1191,19 @@ unresolved across the V20 and classic-line books — gains further entries:
   motive (the Josians' founding, per v20-rites-of-the-blood) to a
   mercantile blood-magic angle (secrets-of-thaumaturgy-revised) alongside
   the political and Brujah/Ventrue-identity accounts already tracked —
-  see "Carthage: a seventh (and eighth) telling" above.
+  see "Carthage: a seventh (and eighth) telling" above. **clanbook-baali**
+  adds the Baali's own version (Moloch as Ba'al Hammon, Troile as his
+  Blood-Oathbound lover, both sealed in the earth by Roman Ventrue/Lasombra
+  and Cybele's rituals) — see "The Baali across the library."
+- **The Baali's origin, Nergal's fate, and the Angellis Ater's origin**
+  (a nameless benefactor vs. Saulot as sire vs. Saulot as the third Baali
+  vs. "First People" devoured by brothers; Nergal surviving as Shaitan vs.
+  slain along with Namtaru; an allied Lasombra coven vs. a bloodline created
+  by Azaneal's corruption or a "Rite of Apostasy") — plus where and how the
+  Baali Curse struck the Assamites (a Damascus organ pit in `clanbook-baali`
+  vs. Chorazin in `clanbook-assamite-revised` and `v20-lore-clans`). See
+  "The Baali across the library" above for the full read; none of it is
+  resolved by any single book.
 
 ## Chronology / influence
 Reading order for someone new to this whole library: start with
@@ -1068,8 +1245,8 @@ lines together by default.
   alongside `secrets-of-thaumaturgy-revised` (same product-line year,
   opposite vantage point — see "Koldunic Sorcery across four books"
   above).
-- **New to the classic Dark Ages line**: `clanbook-salubri` and
-  `wind-from-the-east` are both standalone; read them before or after
+- **New to the classic Dark Ages line**: `clanbook-salubri`,
+  `clanbook-baali` and `wind-from-the-east` are each standalone; read them before or after
   `v20-dark-ages` as suits the question — they cover overlapping ground
   from an earlier, differently-scoped product line rather than serving
   as prerequisites for it. `dark-ages-inquisitor` is also standalone for
@@ -1084,6 +1261,15 @@ lines together by default.
   standalone — it assumes the base book's premise and named leadership
   rather than reintroducing them, and its own `book_index.md` says so up
   front.
+- **New to the Baali specifically**: start with `clanbook-baali` for the
+  bloodline's own long history and organization (classic Dark Ages rules;
+  OCR'd from a scan, so cite printed pages and check the PDF for exact
+  quotes), then `v20-lore-bloodlines`' Baali chapter for the V20 telling
+  (different cosmology, Nergal and Namtaru both slain, Re-Embrace), then
+  `clanbook-assamite-revised` and `v20-lore-clans`' Assamite chapter for the
+  Baali Curse, and `clanbook-salubri` for the Saulot-as-sire tablet. All are
+  individually standalone; see "The Baali across the library" for how they
+  line up and where they don't.
 - **Researching how mortals/hunters perceived Cainites**:
   `dark-ages-inquisitor` and `v20-hunters-hunted-ii` are the two books
   in the library written from that vantage point — the former for the
@@ -1170,9 +1356,18 @@ python3 scripts/query_library.py secrets-of-thaumaturgy-revised/book_chunks.db g
 ```bash
 python3 scripts/query_library.py v20-core/book_chunks.db guide-to-the-sabbat-revised/book_chunks.db "Path of Caine"
 ```
+```bash
+python3 scripts/query_library.py clanbook-baali/book_chunks.db clanbook-assamite-revised/book_chunks.db v20-lore-clans/book_chunks.db "Chorazin"
+```
+```bash
+python3 scripts/query_library.py clanbook-baali/book_chunks.db v20-lore-bloodlines/book_chunks.db "Namtaru"
+```
+```bash
+python3 scripts/query_library.py clanbook-baali/book_chunks.db clanbook-salubri/book_chunks.db v20-dark-ages/book_chunks.db "Saulot"
+```
 (Replace the slug paths with whichever subset of books is relevant to
 the question — the slug names shown above are what appears in the
-grouped results, so use them as written. With 28 books in the library,
+grouped results, so use them as written. With 29 books in the library,
 prefer naming only the 2-5 books actually relevant to a question rather
 than querying all of them at once. Note: FTS5 treats hyphens specially,
 so querying a literal hyphenated term like "Dur-An-Ki" can error out or

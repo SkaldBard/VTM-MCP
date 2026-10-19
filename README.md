@@ -1,6 +1,6 @@
 # Vampire: The Masquerade Searchable Library
 
-A searchable index of 28 *Vampire: The Masquerade* sourcebooks, spanning
+A searchable index of 29 *Vampire: The Masquerade* sourcebooks, spanning
 three product lines/editions, built so that questions about the setting
 can be answered without re-reading the original PDFs. Each book has its
 own self-contained bundle (thematic index + full-text search database),
@@ -40,11 +40,16 @@ lines" section for the full explanation, but briefly:
   than single-clan) book, and this library's primary classic-line source
   for the Sabbat's antitribu clans/bloodlines and seven of V20's eleven
   Paths of Enlightenment.
-- **Classic Dark Ages** (`clanbook-salubri`, `wind-from-the-east`,
-  `dark-ages-inquisitor`) — the *original*, pre-V20 Dark Ages product
-  line, also from the late 1990s/early 2000s. `v20-dark-ages` is a
-  later, updated edition of this same period-setting line, not a direct
-  reprint.
+- **Classic Dark Ages** (`clanbook-salubri`, `clanbook-baali`,
+  `wind-from-the-east`, `dark-ages-inquisitor`) — the *original*, pre-V20
+  Dark Ages product line, also from the late 1990s/early 2000s.
+  `v20-dark-ages` is a later, updated edition of this same period-setting
+  line, not a direct reprint. `clanbook-baali` (1998) is the Baali
+  bloodline's classic-line sourcebook; it refers to a classic-line *Dark
+  Ages Companion* that is **not** in this library and is a different book
+  from `v20-dark-ages-companion`. Its source PDF was an image-only scan,
+  so its chunk database is OCR text (see that bundle's README for the
+  caveats and the printed-page-vs-DB-page offset).
 
 Treat these as related but separate canons. When a question could be
 answered from more than one line, check which one the person actually
@@ -168,6 +173,7 @@ blood curse" section.
 | Book | Folder | Pages |
 |---|---|---|
 | Clanbook: Salubri | `clanbook-salubri/` | 74 |
+| Clanbook: Baali (infernalist bloodline; scanned PDF, OCR text — see its README) | `clanbook-baali/` | 70 |
 | Wind from the East (Dark Ages / Kindred of the East crossover) | `wind-from-the-east/` | 98 |
 | Dark Ages: Inquisitor (hunters'-side sourcebook, classic-line rules; bundle also includes a V20 conversion guide) | `dark-ages-inquisitor/` | 245 |
 | Dark Ages: Inquisitor Companion (direct companion to the above — order-by-order detail, new Blessings/Curses/Merits & Flaws, new antagonists) | `dark-ages-inquisitor-companion/` | 143 |
@@ -197,7 +203,7 @@ blood curse" section.
 .
 ├── README.md                ← you are here
 ├── library_index.md          ← cross-book synthesis: editions, themes,
-│                                agreements, and disagreements across all 28 books
+│                                agreements, and disagreements across all 29 books
 ├── scripts/
 │   └── query_library.py      ← search several books' databases at once
 ├── v20-core/
@@ -214,6 +220,7 @@ blood curse" section.
 ├── v20-tome-of-secrets/
 ├── v20-rites-of-the-blood/
 ├── clanbook-salubri/
+├── clanbook-baali/
 ├── wind-from-the-east/
 ├── dark-ages-inquisitor/
 ├── dark-ages-inquisitor-companion/
@@ -279,6 +286,9 @@ python3 scripts/query_library.py v20-core/book_chunks.db v20-rites-of-the-blood/
 ```bash
 python3 scripts/query_library.py blood-sacrifice-revised/book_chunks.db v20-rites-of-the-blood/book_chunks.db "wangateur"
 ```
+```bash
+python3 scripts/query_library.py clanbook-baali/book_chunks.db clanbook-assamite-revised/book_chunks.db v20-dark-ages/book_chunks.db "Chorazin"
+```
 
 Full-text search (both scripts) supports phrase queries (`"exact
 phrase"`), boolean operators (`term1 AND term2`, `term1 NOT term2`),
@@ -305,8 +315,9 @@ extra packages to install).
 - Where books genuinely disagree with each other (e.g. Carthage's
   portrayal, the Cappadocians'/Salubri's status as active vs. destroyed
   across timelines, the Tremere's and Salubri's opposing accounts of
-  Saulot's diablerie, the Telyavic/Telyavelic Tremere's fate, or the
-  Assamite blood curse's status), `library_index.md` calls this out
+  Saulot's diablerie, the Telyavic/Telyavelic Tremere's fate, the
+  Assamite blood curse's status, or the Baali's origin and Nergal's
+  fate), `library_index.md` calls this out
   explicitly rather than silently picking one version — see its "Points
   of disagreement or tension" section.
 - See "Five things to know before using this library" above before
